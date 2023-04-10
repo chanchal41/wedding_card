@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Petrona:ital,wght@1,500&display=swap"); .navbar-div {
+    position: fixed;
+    top: 0px;
+    width: 95%;
+    height: 3.5rem;
+    z-index: 100
+}
+
+nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-top: 0.6rem;
+    padding: 0rem 1rem;
+    border-radius: 0px 1rem 1rem 0px;
+    width: 100%;
+    height: 3.5rem;
+    font-family: "Lora", serif;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.217);
+    border-top: 1px solid rgba(31, 31, 31, 0.534);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747)
+}
+
+.hamburger-Menu-div {
+    display: none;
+    cursor: pointer;
+    z-index: 5
+}
+
+.mobile-slider > div {
+    width: 70vw;
+    height: 110vh;
+    background-color: white;
+    padding: 4rem 0rem;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747)
+}
+
+.mobile-slider {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -1rem;
+    left: 0;
+    display: none
+}
+
+.mobile-slider > div a {
+    text-decoration: none;
+    color: black
+}
+
+.mobile-slider > div br {
+    height: 1px
+}
+
+.login-info-container {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(0, 140, 116);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+.login-info-container > p {
+    width: 100%;
+    margin-left: 2rem;
+    margin-bottom: 1rem
+}
+
+.mobile-login-btn,.mobile-logout {
+    text-transform: uppercase;
+    color: black;
+    background: rgb(211, 211, 211);
+    background: linear-gradient(0deg,rgba(211, 211, 211, 1) 0%,rgba(255, 255, 255, 1) 50%);
+    padding: 0.8rem 1rem;
+    font-size: medium;
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    width: 70%;
+    font-family: lora
+}
+
+.mobile-login-btn:hover,.mobile-logout:hover {
+    background: linear-gradient(180deg,rgba(211, 211, 211, 1) 0%,rgba(255, 255, 255, 1) 50%)
+}
+
+.mobile-link-div {
+    display: flex;
+    align-items: center
+}
+
+.mobile-link-div > img {
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+.video-invite-link {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: black
+}
+
+.video-invite-link::after {
+    position: absolute;
+    top: 0;
+    right: -60%;
+    content: "Launch offer!";
+    background-color: red;
+    color: white;
+    padding: 0.2rem;
+    font-size: x-small;
+    cursor: pointer
+}
+
+.stacks {
+    background-color: rgba(0, 0, 0, 0.444);
+    width: 25px;
+    height: 2px;
+    margin: 5px 0px
+}
+
+.logo-div img {
+    width: 90px;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    cursor: pointer
+}
+
+.links-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50%;
+    margin-bottom: 0rem
+}
+
+#link-list-items {
+    color: black;
+    text-decoration: none;
+    font-family: "Lora", "sans-serif" !important
+}
+
+.login {
+    cursor: pointer
+}
+
+signup-popup {
+    display: none
+}
+
+#dashboard {
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    top: 75px;
+    right: 0%;
+    font-size: small;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.217);
+    z-index: 100
+}
+
+#dashboard * {
+    margin: 0.5rem 0rem
+}
+
+#dashboard div {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+#dashboard div a {
+    margin: 0;
+    padding: 0.5rem 0rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center
+}
+
+.nav-link-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important
+}
+
+#dashboard div a:hover {
+    background-color: rgba(128, 128, 128, 0.15)
+}
+
+#profile-pic {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 2.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747)
+}
+
+#dashboard button {
+    width: 100%;
+    background-color: rgb(0, 118, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    padding: 0.8rem 0
+}
+
+@media (max-width: 768px) {
+    nav {
+        align-items: center;
+        justify-content: start
+    }
+
+    .hamburger-Menu-div {
+        display: block
+    }
+
+    nav ul li a,nav ul span,.login {
+        display: none
+    }
+
+    .profile-img-div {
+        display: none
+    }
+}
+
+.login-lang-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+#language-selector {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    font-family: lora;
+    border: 1px solid gray;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    outline: none
+}

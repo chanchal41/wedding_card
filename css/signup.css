@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+.login-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.login-container {
+    width: fit-content;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.747);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75)
+}
+
+.signup-img {
+    width: 3rem;
+    height: 3rem
+}
+
+.signup-tel-img {
+    width: 4rem;
+    height: 4rem
+}
+
+.left-side {
+    padding-right: 2rem;
+    width: 30rem
+}
+
+.signup-company-logo {
+    width: 10rem;
+    margin-bottom: 1rem
+}
+
+.left-side p {
+    color: gray;
+    position: relative;
+    font-size: large;
+    margin-bottom: 5rem
+}
+
+.left-side p::after {
+    content: "-an initiative by Alumni of IIT Hyderabad";
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    font-size: medium
+}
+
+.right-side {
+    width: 15.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    padding: 1rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.right-side > * {
+    margin: 0.5rem 0rem
+}
+
+.right-side hr {
+    width: 60%;
+    color: rgba(128, 128, 128, 0.2)
+}
+
+.right-side button {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(0, 118, 99);
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    color: white;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+    transition: scale 0.5s, background-color 0.5s
+}
+
+.right-side button:active {
+    scale: 0.95
+}
+
+.right-side-input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    outline: none;
+    width: 100%
+}
+
+.signup-tel-img {
+    margin-bottom: 0
+}
+
+.phone-numb-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#phone-number {
+    width: 14rem
+}
+
+#otp-msg,#number-msg {
+    color: red
+}
+
+.phone-login-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0
+}
+
+.confirm-otp-div {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.span-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.confirm-otp-div span {
+    color: rgb(0, 0, 97);
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: small
+}
+
+.confirm-otp-div span:hover {
+    color: rgb(0, 0, 189)
+}
+
+.phone-numb-div > *,.confirm-otp-div > * {
+    margin: 0.5rem 0rem
+}
+
+.mobile-signup-popup > .right-side {
+    background-color: white;
+    display: none;
+    align-items: center
+}
+
+.fa-circle-xmark {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    cursor: pointer;
+    font-size: x-large
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 0
+    }
+
+    .left-side {
+        display: none
+    }
+
+    .right-side {
+        visibility: visible;
+        background-color: white
+    }
+}
